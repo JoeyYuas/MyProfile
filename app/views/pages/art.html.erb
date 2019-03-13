@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="ml-1">
+    <h1>My Art</h1>
+    <br></br>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card" style="width: 20rem;">
+        <%= image_tag("iramen.jpg", class:"bd-placeholder-img card-img-top") %>
+          <title>i-Ramen</title>
+          <rect fill="#868e96" width="100%" height="100%"/>
+        <div class="card-body">
+          <h5 class="card-title">i-Ramen</h5>
+          <p class="card-text">Kotlinにて作成したAndroidアプリ（未完成）。制作期間は1ヶ月。</p>
+          <p class="card-text">ラーメンを食べ過ぎてしまう人たちのために、1ヶ月に食べられるラーメンの量を制限する健康管理アプリ。</p>
+          <p class="card-text">まだ実装できていない「ヘルプ」をそろそろ実装したい。</p>
+          <%= link_to("ダウンロードはこちら", "/", class:"btn btn-primary") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card" style="width: 20rem;">
+        <%= image_tag("Octocat.jpg", class:"bd-placeholder-img card-img-top") %>
+          <title>GitHub</title>
+          <rect fill="#868e96" width="100%" height="100%"/>
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <p class="card-text">お決まりのやつ。</p>
+          <p class="card-text">趣味での開発や勉強メイン。</p>
+          <p class="card-text">ゆくゆくはOSSに参加したい。</p>
+          <%= link_to("アクセスはこちら", "https://github.com/JoeyYuas?tab=repositories", target:["_blank"], class:"btn btn-primary") %>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
