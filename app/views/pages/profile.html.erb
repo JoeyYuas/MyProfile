@@ -1,11 +1,18 @@
 <div class="container">
-  <div class="ml-1">
+  <div class="ml-1 pb-3">
     <h1>My Profile</h1>
-    <br></br>
   </div>
   <div class="row">
     <div class="col-sm-4">
       <div class="ml-1 mr-1">
+        <div class="pb-1">
+          <div id="like">
+            <%= render'pages/ajax_like', item:@isLike %>
+          </div>
+          <div class="text-muted">
+            応援が励みになります！
+          </div>
+        </div>
         <%= image_tag("joey.jpg", class:"img-fluid") %>
       </div>
     </div>

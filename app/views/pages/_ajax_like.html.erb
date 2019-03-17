@@ -1,0 +1,10 @@
+<% if @isLike == true %>
+  <%= link_to image_tag("thumdsup.png", size:'30x30', class:"img-fluid"), "dislike", method: :post, remote: true %>
+  <%= @total_like.total %>
+  <% p "true" %>
+
+<% else %>
+  <%= link_to image_tag("thumdsup_white.png", size:'30x30', class:"img-fluid"), "like", method: :post, remote: true %>
+  <%= @total_like.total %>
+  <% p "false" %>
+<% end %>
